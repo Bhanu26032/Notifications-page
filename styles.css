@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.row 
+.is-hoverable:hover,
+header 
+.is-hoverable:hover {
+    color: red !important;
+    filter: brightness(1.5);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+body {
+    background-color: lightblue;
+    font-family:sans-serif;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 43rem;
+    max-width: 100%;
+    margin: 5rem auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 25px;
+    box-shadow: 11px 14px 45px -21px lightblue;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    main {
+        width: 60vw;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 375px) {
+    body{
+        padding: 0;
+    }
+    main {
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+}
+
+main 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+main 
+header 
+.title-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+main 
+header 
+.title {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+main 
+header 
+#notifications-counter {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-weight: 100;
+    align-self: center;
+}
+
+main 
+header 
+#mark-all {
+    color: darkblue;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* /Header  */
+
+/* Section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+section 
+.row {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+section 
+.row 
+.img-container {
+    margin-right: 10px;
+    align-self: flex-start;
+}
+
+section 
+.row 
+.square-img-container {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    
+}
+
+
+section 
+.row 
+.notification-container {
+    align-self: center;
+    padding-right: 16px;
+}
+
+section 
+.row 
+.notification-container 
+.contact-name {
+    display: inline-block;
+    transition: color 300ms;
+    color: darkblue;
+}
+
+
+section 
+.row 
+.notification-text {
+    color: rgb(48, 48, 93);
+    margin: 0 2px;
+}
+
+section 
+.row 
+.post,
+section 
+.row 
+.group-name {
+    text-decoration: none;
+    color: darkblue;
+    transition: color 300ms;
+}
+
+section 
+.row 
+.group-name {
+    color: blue;
+}
+
+
+section 
+.row 
+.notification-time {
+    color: rgb(34, 34, 71);
+    margin: 2px 0;
+}
+
+section 
+.to-read {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#toRead {
+    background-color: lightblue;
+}
+
+section 
+.row 
+.notification-container 
+.text-content::after {
+    content: "";
+    display: 'inline-block';
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+section 
+.row 
+img {
+    max-width: 45px;
+    height: auto;
+}
+
+section 
+.row 
+.notification-container  
+#message-in-container {
+    background-color: none;
+    border: 0.5px solid lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: border, background-color 300ms;
+}
+
+section 
+.row 
+.notification-container  
+#message-in-container:hover,
+section 
+.row 
+.notification-container  
+#message-in-container:focus {
+    background-color: lightblue;
+    border: 0.5px solid white;
+    transition: border 600ms;
+}
+
+section 
+.row 
+.notification-container  
+#message-in-container 
+.message-in {
+    color: rgb(47, 47, 103);
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
